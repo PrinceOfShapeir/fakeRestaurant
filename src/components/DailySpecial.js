@@ -16,9 +16,10 @@ function DailySpecial(){
     return(
 
         <>
-    <div>{daily}</div>
+    <h2>{daily}</h2>
 
     <img src={`assets/img/${specialImages[daily]}.jpg`}></img>
+    <div>{specialDesc[daily]}</div>
 
     </>
 
