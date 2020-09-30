@@ -25,15 +25,17 @@ function DailySpecial(){
         <>
 
         <Container id='special'>
+            {/*
             <Row>
+                
                 <Col>
-                    <h2>{daily}</h2>
+                    <h1>{daily}</h1>
                 </Col>
-            </Row>
+            </Row>*/}
             <Row>
-                <Col xs="5">
-                    <Card width="60%">
-                        <CardImg width="50%" alt={daily} src={`assets/img/${specialImages[daily]}.jpg`}></CardImg>
+                <Col xs="12" s="8">
+                    <Card>
+                        <CardImg alt={daily} src={`assets/img/${specialImages[daily]}.jpg`}></CardImg>
                         <CardTitle>{daily}</CardTitle>
                         <CardText>
                             {specialDesc[daily]}
