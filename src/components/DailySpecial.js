@@ -1,5 +1,12 @@
 import { render } from '@testing-library/react';
 import React, {useState} from 'react';
+import {Container, Row, Col,
+    Button,
+    Card,
+    CardBody,
+    CardImg,
+    CardTitle,
+    CardText,} from 'reactstrap';
 
 function DailySpecial(){
 
@@ -16,11 +23,34 @@ function DailySpecial(){
     return(
 
         <>
-    <h2>{daily}</h2>
 
-    <img src={`assets/img/${specialImages[daily]}.jpg`}></img>
-    <div>{specialDesc[daily]}</div>
+        <Container id='special'>
+            <Row>
+                <Col>
+                    <h2>{daily}</h2>
+                </Col>
+            </Row>
+            <Row>
+                <Col xs="5">
+                    <Card width="60%">
+                        <CardImg width="50%" alt={daily} src={`assets/img/${specialImages[daily]}.jpg`}></CardImg>
+                        <CardTitle>{daily}</CardTitle>
+                        <CardText>
+                            {specialDesc[daily]}
+                        </CardText>
+                        <Button
+                            color="success"
+                            href=""
 
+
+                        >Add to Cart</Button>
+                    </Card>
+                    {/*
+                    <img src={`assets/img/${specialImages[daily]}.jpg`}></img>
+                    <div>{specialDesc[daily]}</div>*/}
+                </Col>
+            </Row>
+        </Container>
     </>
 
 

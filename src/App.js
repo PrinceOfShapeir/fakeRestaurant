@@ -10,7 +10,11 @@ function App() {
         
       </header>
 
-      <DailySpecial />
+      
+
+        <DailySpecial />
+      
+
     </div>
   );
 }
