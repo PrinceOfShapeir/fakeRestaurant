@@ -19,7 +19,7 @@ function RenderMenu (){
         outputMenu.push(
 
             
-                <Card id={specialImages[property]}>
+                <Card id={specialImages[property]} style={{flexBasis: '25%'}}>
                     <CardImg alt={specialImages[property]} src={`assets/img/${specialImages[property]}.jpg`}></CardImg>
                     <CardTitle>{property}</CardTitle>
                     <CardText>
@@ -36,7 +36,7 @@ function RenderMenu (){
         )
     }
     return (
-        <CardGroup>
+        <CardGroup style={{display: 'flex', flexDirection: 'row'}}>
             {outputMenu}
         </CardGroup>
     )
