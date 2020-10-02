@@ -25,13 +25,13 @@ function DailySpecial(){
         <>
 
         <Container id='special'>
-            {/*
+            
             <Row>
                 
                 <Col>
-                    <h1>{daily}</h1>
+                    <h3>Daily Special</h3>
                 </Col>
-            </Row>*/}
+            </Row>
             <Row>
                 <Col xs="12" s="8">
                     <Card>
