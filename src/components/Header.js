@@ -14,6 +14,9 @@ function Header () {
                 <Col xs="2">
                     <a href="/menu">Menu</a>
                 </Col>
+                <Col xs="2">
+                    <a href="/cart">View Cart</a>
+                </Col>
             </Row>
         </Container>
         </>
